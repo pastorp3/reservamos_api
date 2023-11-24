@@ -1,24 +1,38 @@
-# README
+# Weather Forecast API - Reservamos Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup Instructions
 
-Things you may want to cover:
+### Prerequisites
+- Ruby "3.1.2"
+- Rails "7.0.8"
 
-* Ruby version
+### Getting Started
 
-* System dependencies
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/weather-api.git
 
-* Configuration
+2. **Install Dependencies:**
+   ```bash
+   bundle install
 
-* Database creation
+2. **Create the Database:**
+   ```bash
+   rails db:create
+   
+3. **Add your api key:**
 
-* Database initialization
+   open app/helpers/weather_api_helper.rb in your local and add your key  after appid=
 
-* How to run the test suite
+5. **Start the Rails Server:**
+   ```bash
+   rails server
 
-* Services (job queues, cache servers, search engines, etc.)
+6. **Get Weather Data:**
+   ```bash
+   http://localhost:3000/get_weather?city={City Name}
+  Visit it in your browser to retrieve weather information for a specific city. Replace {City Name} with the desired city.
 
-* Deployment instructions
-
-* ...
+Example: http://localhost:3000/get_weather?city=Monterrey
+  
+Enjoy the magic of weather data!
