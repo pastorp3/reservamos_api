@@ -36,3 +36,7 @@
 Example: http://localhost:3000/get_weather?city=Monterrey
   
 Enjoy the magic of weather data!
+
+## Notes
+
+If for some reason the app starts giving errors about nil objects is because your API kay might be blocked because the app does an API call per city and it can block your key. if it happens try with a new key to continue testing
