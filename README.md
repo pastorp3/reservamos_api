@@ -1,4 +1,3 @@
-# Weather Forecast API - Reservamos Challenge
 
 ## Setup Instructions
 
@@ -10,33 +9,28 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/weather-api.git
+   git clone [https://github.com/your-username/weather-api.git](https://github.com/pastorp3/crypto_dashboard.git)
 
 2. **Install Dependencies:**
    ```bash
    bundle install
+   yarn install
 
-2. **Create the Database:**
+2. **Setup Database:**
    ```bash
    rails db:create
+   rails db:migrate
+   rails db:seed
    
 3. **Add your api key:**
 
-   open app/helpers/weather_api_helper.rb in your local and add your key  after appid=
+   open app/services/fetch_coin_value.rb in your local and add your key  after ApiKey=
 
 5. **Start the Rails Server:**
    ```bash
    rails server
 
-6. **Get Weather Data:**
+6. **Open App in your local server:**
    ```bash
-   http://localhost:3000/get_weather?city={City Name}
-  Visit it in your browser to retrieve weather information for a specific city. Replace {City Name} with the desired city.
+   http://localhost:3000
 
-Example: http://localhost:3000/get_weather?city=Monterrey
-  
-Enjoy the magic of weather data!
-
-## Notes
-
-If for some reason the app starts giving errors about nil objects is because your API kay might be blocked because the app does an API call per city and it can block your key. if it happens try with a new key to continue testing
